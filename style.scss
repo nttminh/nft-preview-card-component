@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Outfit', sans-serif;
+}
+
+$cyan: #00fff8;
+$cyanWithOpacity: #00fff798;
+@mixin hover {
+	&:hover {
+		color: $cyan;
+		cursor: pointer;
+	}
+}
+
+.container {
+	width: auto;
+	height: 100vh;
+	background-color: hsl(217, 54%, 11%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.wrapper {
+		max-width: 350px;
+		color: #8bacd9;
+		background-color: hsl(216, 50%, 16%);
+		padding: 1.5rem;
+		border-radius: 15px;
+		box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+			0 15px 12px rgba(0, 0, 0, 0.22);
+
+		$breakpoint-mobile: 375px;
+		@media (min-width: $breakpoint-mobile) {
+			max-width: 327px;
+		}
+
+		.img-container {
+			position: relative;
+			display: block;
+			cursor: pointer;
+			text-align: center;
+
+			img {
+				border-radius: 15px;
+				width: 100%;
+				z-index: 0;
+			}
+		}
+
+		.img-container::after {
+			position: absolute;
+			inset: 0;
+			border-radius: 15px;
+			content: '';
+			line-height: 283px;
+		}
+
+		.img-container:hover::after {
+			transition-duration: 500ms;
+			content: url('/images/icon-view.svg');
+			background: $cyanWithOpacity center/3rem no-repeat;
+		}
+
+		.info-section {
+			padding-top: 21px;
+			padding-bottom: 21px;
+			border-bottom: 0.5px solid hsl(215, 51%, 70%);
+			margin-bottom: 21px;
+
+			.title {
+				color: #ffffff;
+				font-weight: 700;
+				padding-bottom: 21px;
+				@include hover();
+			}
+			.description {
+				font-weight: 300;
+				line-height: 26px;
+				padding-bottom: 21px;
+			}
+			.status {
+				display: flex;
+				justify-content: space-between;
+				height: 20px;
+
+				.price {
+					display: flex;
+					align-items: center;
+					color: #00fff8;
+
+					svg {
+						margin-right: 5px;
+					}
+				}
+
+				.expiration {
+					display: flex;
+					svg {
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+
+		.creator {
+			display: flex;
+			align-items: center;
+			height: 33px;
+			img {
+				border-radius: 50%;
+				max-width: 33px;
+				border: 1px solid white;
+				margin-right: 16px;
+			}
+
+			span {
+				color: white;
+				@include hover();
+			}
+		}
+	}
+}
+
+.attribution {
+	text-align: center;
+}

@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  width: auto;
+  height: 100vh;
+  background-color: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .wrapper {
+  max-width: 350px;
+  color: #8bacd9;
+  background-color: #14253d;
+  padding: 1.5rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+@media (min-width: 375px) {
+  .container .wrapper {
+    max-width: 327px;
+  }
+}
+
+.container .wrapper .img-container {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container .wrapper .img-container img {
+  border-radius: 15px;
+  width: 100%;
+  z-index: 0;
+}
+
+.container .wrapper .img-container::after {
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  content: '';
+  line-height: 283px;
+}
+
+.container .wrapper .img-container:hover::after {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  content: url("/images/icon-view.svg");
+  background: #00fff798 center/3rem no-repeat;
+}
+
+.container .wrapper .info-section {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border-bottom: 0.5px solid #8bacda;
+  margin-bottom: 21px;
+}
+
+.container .wrapper .info-section .title {
+  color: #ffffff;
+  font-weight: 700;
+  padding-bottom: 21px;
+}
+
+.container .wrapper .info-section .title:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+
+.container .wrapper .info-section .description {
+  font-weight: 300;
+  line-height: 26px;
+  padding-bottom: 21px;
+}
+
+.container .wrapper .info-section .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 20px;
+}
+
+.container .wrapper .info-section .status .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00fff8;
+}
+
+.container .wrapper .info-section .status .price svg {
+  margin-right: 5px;
+}
+
+.container .wrapper .info-section .status .expiration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .wrapper .info-section .status .expiration svg {
+  margin-right: 5px;
+}
+
+.container .wrapper .creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33px;
+}
+
+.container .wrapper .creator img {
+  border-radius: 50%;
+  max-width: 33px;
+  border: 1px solid white;
+  margin-right: 16px;
+}
+
+.container .wrapper .creator span {
+  color: white;
+}
+
+.container .wrapper .creator span:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
