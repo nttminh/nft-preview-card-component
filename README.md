@@ -28,7 +28,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screenshot-desktop-hovered](https://user-images.githubusercontent.com/59038507/153959240-a32f7841-b88a-4340-bc4b-3630776a82f3.JPG)
+![screenshot-mobile](https://user-images.githubusercontent.com/59038507/153959242-cbc14922-c98e-4a41-a234-bbab122cf48c.JPG)
+
 
 ### Links
 
