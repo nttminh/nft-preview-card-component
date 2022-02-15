@@ -72,6 +72,7 @@ $cyanWithOpacity: #00fff798;
 			.title {
 				color: #ffffff;
 				font-weight: 700;
+				font-size: 20px;
 				padding-bottom: 21px;
 				@include hover();
 			}
@@ -92,6 +93,10 @@ $cyanWithOpacity: #00fff798;
 
 					svg {
 						margin-right: 5px;
+					}
+
+					p {
+						font-weight: bold;
 					}
 				}
 

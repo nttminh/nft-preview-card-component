@@ -75,6 +75,7 @@
 .container .wrapper .info-section .title {
   color: #ffffff;
   font-weight: 700;
+  font-size: 20px;
   padding-bottom: 21px;
 }
 
@@ -111,6 +112,10 @@
 
 .container .wrapper .info-section .status .price svg {
   margin-right: 5px;
+}
+
+.container .wrapper .info-section .status .price p {
+  font-weight: bold;
 }
 
 .container .wrapper .info-section .status .expiration {
